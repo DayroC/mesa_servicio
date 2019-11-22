@@ -1,11 +1,11 @@
 <?php
 
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+// $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$database = substr($url["path"], 1);
+// $host = $url["host"];
+// $username = $url["user"];
+// $password = $url["pass"];
+// $database = substr($url["path"], 1);
 
 
 
@@ -55,16 +55,16 @@ return [
 
     'connections' => [
 
-        'mysql://b86e6d96e53642:7475f534@us-cdbr-iron-east-05.cleardb.net/heroku_23eda0cdcbde25e?reconnect=true' => array(
-            'driver' => 'mysql',
-            'host' => $host,
-            'database' => $database,
-            'username' => $username,
-            'password' => $password,
-            'charset' => 'utf8',
-            'collation' => 'utf8_unicode_ci',
-            'prefix' => '',
-        ),
+        // 'mysql://b86e6d96e53642:7475f534@us-cdbr-iron-east-05.cleardb.net/heroku_23eda0cdcbde25e?reconnect=true' => array(
+        //     'driver' => 'mysql',
+        //     'host' => $host,
+        //     'database' => $database,
+        //     'username' => $username,
+        //     'password' => $password,
+        //     'charset' => 'utf8',
+        //     'collation' => 'utf8_unicode_ci',
+        //     'prefix' => '',
+        // ),
 
         'sqlite' => [
             'driver' => 'sqlite',
